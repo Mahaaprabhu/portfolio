@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 62.5%;
+}
+
+.break-box-small {
+    height: .5rem;
+}
+
+.brake-box {
+    height: 1rem;
+}
+
+.brake-box-large {
+    height: 2rem;
+}
