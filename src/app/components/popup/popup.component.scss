@@ -1,0 +1,86 @@
+@import './../../styles/global.scss';
+
+.popup-back-drop {
+    position: absolute;
+    z-index: 1000;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: .95;
+    background-color: $bg-color-primary-dark;
+    color: $fnt-color-primary-light;
+}
+
+.popup-boundary {
+    position: absolute;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 60rem;
+    height: 60vh;
+    max-height: 45rem;
+    padding: 2vw;
+    border-radius: 3vw;
+    border: .2rem solid $bg-color-primary;
+    box-shadow: 0rem 0rem 4rem $bg-color-primary;
+
+    .close-popup-icon {
+        z-index: 1002;
+        top: 1.5vw;
+        right: 1.5vw;
+        display: block;
+        position: absolute;
+        font-size: 4rem;
+        color: $bg-color-primary-light;
+    }
+    .close-popup-icon:hover {
+        color: red;
+    }
+
+    .popup {
+        height: 100%;
+        width: 100%;
+        border-radius: 3vw;
+        padding: 3vw;
+        background-color: $bg-color-primary-dark;
+        border: .5px solid $bg-color-primary;
+        &-display {
+            width: 100%;
+            height: 50%;
+            background-color: $bg-color-primary-dark;
+            color: $bg-color-primary-light;
+            position: relative;
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-display:hover {
+            font-size: xx-large;
+            color: rgb(119, 191, 250);
+        }
+        &-btns {
+            width: 100%;
+            height: 50%;
+            .popup-btn {
+                width: 50%;
+                height: 100%;
+                float: left;
+                background-color: $bg-color-primary-dark;
+                color: $bg-color-primary-light;
+                position: relative;
+                box-shadow: 0rem .2rem .5rem $bg-color-primary;
+            }
+            .popup-btn:hover, .popup-btn:hover {
+                color: rgb(119, 191, 250);
+                box-shadow: 0rem .2rem .5rem rgb(119, 191, 250);
+            }
+        }
+    }
+}
+
+.action-icon {
+    font-size: 4rem;
+}

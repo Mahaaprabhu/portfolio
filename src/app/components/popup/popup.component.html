@@ -1,0 +1,27 @@
+<div class="popup-back-drop">
+    BACK DROP
+</div>
+
+<div class="popup-boundary">
+    <i class="fa fa-times close-popup-icon" (click)="onClosePopup()"></i>
+    <div class="popup">
+        <div class="popup-display">
+            <div class="display-content  centered">
+                <label>{{popupContent}}</label>
+            </div>
+        </div>
+        <div class="popup-btns">
+            <div class="popup-btn">
+                <div class="popup-action-btn  centered">
+                    <i *ngIf="popupType === 'EMAIL'" class="fas fa-envelope action-icon"></i>
+                    <i *ngIf="popupType === 'PHONE'" class="fas fa-phone action-icon"></i>
+                </div>
+            </div>
+            <div class="popup-btn">
+                <div class="popup-action-btn  centered">
+                    <i class="fas fa-copy action-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
