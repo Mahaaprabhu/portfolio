@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio (Just a draft skeleton project, will see lot of updates)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
