@@ -16,13 +16,46 @@ export class PopupComponent implements OnInit {
   @Output()
   closePopup: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  displaySpecialColor: boolean = false;
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
 
   onClosePopup() {
     this.closePopup.emit();
+  }
+
+  onClipboardCopy(): void {
+    const dynamicElement: HTMLTextAreaElement = document.createElement('textarea');
+    dynamicElement.value = this.getClearedData();
+    dynamicElement.style.height = '0';
+    dynamicElement.style.width = '0';
+    dynamicElement.style.opacity = '0';
+    document.body.appendChild(dynamicElement);
+    dynamicElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(dynamicElement);
+    this.changeDisplayContent();
+  }
+
+  private changeDisplayContent(): void {
+    const backupData = this.popupContent;
+    this.popupContent = 'COPPIED';
+    this.displaySpecialColor = true;
+    setTimeout(
+      () => {
+        this.popupContent = backupData;
+        this.displaySpecialColor = false;
+      },
+      2000
+    );
+  }
+
+  getClearedData(): string {
+    return this.popupContent.trim().toLowerCase().replace(' ', '');
   }
 
 }

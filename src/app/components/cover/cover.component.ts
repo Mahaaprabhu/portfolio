@@ -21,7 +21,7 @@ export class CoverComponent implements OnInit {
     this.popupType = popupType;
     switch(popupType) {
       case 'PHONE':
-        this.popupContent = '+91 80152 39799';
+        this.popupContent = '+91 8015239799';
         break;
       case 'EMAIL':
         this.popupContent = 'mahAAprabhu @gmail.com';

@@ -1,15 +1,18 @@
 @import './../../styles/global.scss';
 
 .popup-back-drop {
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     min-height: 100vh;
     min-width: 100vw;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     opacity: .95;
     background-color: $bg-color-primary-dark;
     color: $fnt-color-primary-light;
+    overflow: scroll;
 }
 
 .popup-boundary {
@@ -20,36 +23,37 @@
     transform: translate(-50%, -50%);
     width: 80vw;
     max-width: 60rem;
-    height: 60vh;
-    max-height: 45rem;
-    padding: 2vw;
-    border-radius: 3vw;
+    height: 40vh;
+    max-height: 40rem;
+    min-height: 20rem;
+    padding: 2rem;
+    border-radius: 3rem;
     border: .2rem solid $bg-color-primary;
     box-shadow: 0rem 0rem 4rem $bg-color-primary;
 
     .close-popup-icon {
         z-index: 1002;
-        top: 1.5vw;
-        right: 1.5vw;
+        top: .5vw;
+        right: .5vw;
         display: block;
         position: absolute;
-        font-size: 4rem;
+        font-size: 3rem;
         color: $bg-color-primary-light;
+        transition-duration: all .5s;
     }
     .close-popup-icon:hover {
         color: red;
+        transform: scale(1.1) rotate(-10deg);
     }
-
     .popup {
         height: 100%;
         width: 100%;
-        border-radius: 3vw;
-        padding: 3vw;
-        background-color: $bg-color-primary-dark;
+        border-radius: 3rem;
+        padding: 2rem;
         border: .5px solid $bg-color-primary;
         &-display {
             width: 100%;
-            height: 50%;
+            height: 60%;
             background-color: $bg-color-primary-dark;
             color: $bg-color-primary-light;
             position: relative;
@@ -57,13 +61,17 @@
             font-weight: bold;
             text-align: center;
         }
+        .special-color {
+            color: green;
+            font-size: xx-large;
+        }
         &-display:hover {
             font-size: xx-large;
             color: rgb(119, 191, 250);
         }
         &-btns {
             width: 100%;
-            height: 50%;
+            height: 40%;
             .popup-btn {
                 width: 50%;
                 height: 100%;
@@ -73,9 +81,13 @@
                 position: relative;
                 box-shadow: 0rem .2rem .5rem $bg-color-primary;
             }
-            .popup-btn:hover, .popup-btn:hover {
+            .popup-btn:hover {
                 color: rgb(119, 191, 250);
                 box-shadow: 0rem .2rem .5rem rgb(119, 191, 250);
+            }
+            .popup-btn:active {
+                color: green;
+                box-shadow: 0rem .05rem .2rem green;
             }
         }
     }
