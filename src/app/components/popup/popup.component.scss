@@ -21,6 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 1s;
     width: 80vw;
     max-width: 60rem;
     height: 40vh;
@@ -62,8 +63,8 @@
             text-align: center;
         }
         .special-color {
-            color: green;
             font-size: xx-large;
+            color: rgb(119, 191, 250);
         }
         &-display:hover {
             font-size: xx-large;
@@ -82,12 +83,13 @@
                 box-shadow: 0rem .2rem .5rem $bg-color-primary;
             }
             .popup-btn:hover {
-                color: rgb(119, 191, 250);
                 box-shadow: 0rem .2rem .5rem rgb(119, 191, 250);
             }
             .popup-btn:active {
-                color: green;
-                box-shadow: 0rem .05rem .2rem green;
+                color: rgb(119, 191, 250);
+                font-size: 5rem;
+                text-shadow: 0 0 1rem white;
+                box-shadow: none;
             }
         }
     }

@@ -43,14 +43,14 @@ export class PopupComponent implements OnInit {
 
   private changeDisplayContent(): void {
     const backupData = this.popupContent;
-    this.popupContent = 'COPPIED';
+    this.popupContent = 'COPIED';
     this.displaySpecialColor = true;
     setTimeout(
       () => {
         this.popupContent = backupData;
         this.displaySpecialColor = false;
       },
-      2000
+      1000
     );
   }
 
