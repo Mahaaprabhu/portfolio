@@ -99,8 +99,8 @@
         transition: all 1s;
         &:active, &:hover {
             transform: rotateZ(30deg) scale(.8);
-            background-color: $bg-color-primary-dark;
-            box-shadow: 1px 1px 5px $bg-color-primary-light;
+            background-color: #183a7b;
+            box-shadow: 1px 1px 5px #cdd9ea;
         }
       }
 
