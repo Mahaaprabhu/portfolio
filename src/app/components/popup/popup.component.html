@@ -14,7 +14,7 @@
         </div>
         <div class="popup-btns">
             <a *ngIf="popupType === 'PHONE'" [href]="'tel:'+getClearedData()">
-                <div class="popup-btn">
+                <div class="popup-btn left-btm-radius">
                     <div class="popup-action-btn  centered">
                         <i class="fas fa-phone action-icon"></i>
                     </div>
@@ -22,14 +22,14 @@
             </a>
 
             <a *ngIf="popupType === 'EMAIL'" [href]="'mailto:'+getClearedData()">
-                <div class="popup-btn">
+                <div class="popup-btn left-btm-radius">
                     <div class="popup-action-btn  centered">
                         <i class="fas fa-envelope action-icon"></i>
                     </div>
                 </div>
             </a>
             
-            <div class="popup-btn" (click)="onClipboardCopy()">
+            <div class="popup-btn right-btm-radius" (click)="onClipboardCopy()">
                 <div class="popup-action-btn  centered">
                     <i class="fas fa-copy action-icon"></i>
                 </div>

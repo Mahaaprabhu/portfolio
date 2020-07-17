@@ -1,13 +1,20 @@
 @import './../../styles/global.scss';
 
+//*** https://pixabay.com/illustrations/digitization-transformation-binary-5140055/ 
+
 .prof-cover {
     height: 100vh;
     min-height: 40rem;
     max-height: 42rem;
     width: 100vw;
     min-width: 25rem;
-    background-color: $bg-color-primary;
+    background-image: 
+        url(/assets/pics/digital_nody_nets_cool.jpg), 
+        linear-gradient(to right, rgb(60 84 123 / 67%), rgb(12 42 88 / 82%), rgb(34 66 119 / 68%));
     color: $fnt-hdr-color-light;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
     padding: 4rem 2rem;
 } //.prof-cover
 
@@ -21,8 +28,9 @@
   animation: radiusy1 10s linear infinite;
   overflow: visible;
   margin: auto;
-  background-image: linear-gradient(90deg, transparent, $bg-color-primary, transparent);
+  background-image: linear-gradient(90deg, transparent, $bg-color-primary, transparent,);
   padding: .1rem;
+  box-shadow: 0.1rem 0.1rem 1rem $bg-color-primary-dark;
   &:active, &:hover {
     transform: scale(1.5)  translateY(10vh);
     width: 90vw;

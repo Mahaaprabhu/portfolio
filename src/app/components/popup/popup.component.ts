@@ -29,6 +29,7 @@ export class PopupComponent implements OnInit {
   }
 
   onClipboardCopy(): void {
+    if (this.popupContent == 'COPIED') return;
     const dynamicElement: HTMLTextAreaElement = document.createElement('textarea');
     dynamicElement.value = this.getClearedData();
     dynamicElement.style.height = '0';

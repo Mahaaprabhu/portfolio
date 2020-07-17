@@ -1,10 +1,10 @@
 //Background Colors
-$bg-color-primary: #030a15ba;
-$bg-color-primary-dark: #262f35; //#051c38;
-$bg-color-primary-light: #6c7784; // #4b688b;
-/*$bg-color-secondary: ;
-$bg-color-secondary-dark: ;
-$bg-color-secondary-light: ;
+$bg-color-primary: rgba(3,10,21,.73); //#262f35;
+$bg-color-primary-dark: rgb(1, 9, 20);
+$bg-color-primary-light: #464d56; // #4b688b;
+/*$bg-color-secondary: ;*/
+$bg-color-secondary-dark: #04080e;
+/*$bg-color-secondary-light: ;
 $bg-color-tertiary: ;
 $bg-color-tertiary-dark: ;
 $bg-color-tertiary-light: ;*/
@@ -22,3 +22,6 @@ $fnt-color-secondary-light: ;
 $fnt-color-tertiary: ;
 $fnt-color-tertiary-dark: ;
 $fnt-color-tertiary-light: ;*/
+
+//Special Colors
+$spl-color-glow-primary: rgb(119, 191, 250);

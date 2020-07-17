@@ -9,9 +9,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .95;
-    background-color: $bg-color-primary-dark;
-    color: $fnt-color-primary-light;
+    background-color: #1a1b25b3;
     overflow: scroll;
 }
 
@@ -29,34 +27,38 @@
     min-height: 20rem;
     padding: 2rem;
     border-radius: 3rem;
-    border: .2rem solid $bg-color-primary;
-    box-shadow: 0rem 0rem 4rem $bg-color-primary;
+    border: 0.1rem solid #8698ad;
 
     .close-popup-icon {
         z-index: 1002;
-        top: .5vw;
-        right: .5vw;
+        top: 0.5vw;
+        right: 0.5vw;
         display: block;
         position: absolute;
         font-size: 3rem;
-        color: $bg-color-primary-light;
-        transition-duration: all .5s;
+        color: #b33434bf;
+        background-color: #162238;
+        border-radius: 100rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        transition: all 0.5s;
     }
     .close-popup-icon:hover {
-        color: red;
-        transform: scale(1.1) rotate(-10deg);
+        color: #162238;
+        background-color: #b33434bf;
+        transform: scale(1.5) rotate(-10deg);
     }
     .popup {
         height: 100%;
         width: 100%;
         border-radius: 3rem;
-        padding: 2rem;
-        border: .5px solid $bg-color-primary;
+        background-color: #152135db;
+        box-shadow: 0rem 0rem 4rem #ffffff;
         &-display {
             width: 100%;
             height: 60%;
-            background-color: $bg-color-primary-dark;
-            color: $bg-color-primary-light;
+            color: #a0a1a2;
             position: relative;
             font-size: x-large;
             font-weight: bold;
@@ -64,11 +66,11 @@
         }
         .special-color {
             font-size: xx-large;
-            color: rgb(119, 191, 250);
+            color: $spl-color-glow-primary;
+            text-shadow: 0 0 1rem white;
         }
         &-display:hover {
             font-size: xx-large;
-            color: rgb(119, 191, 250);
         }
         &-btns {
             width: 100%;
@@ -77,16 +79,15 @@
                 width: 50%;
                 height: 100%;
                 float: left;
-                background-color: $bg-color-primary-dark;
-                color: $bg-color-primary-light;
+                color: #a0a1a2;
                 position: relative;
-                box-shadow: 0rem .2rem .5rem $bg-color-primary;
             }
             .popup-btn:hover {
-                box-shadow: 0rem .2rem .5rem rgb(119, 191, 250);
+                background-color: $bg-color-primary;
             }
             .popup-btn:active {
-                color: rgb(119, 191, 250);
+                background-color: $bg-color-primary;
+                color: $spl-color-glow-primary;
                 font-size: 5rem;
                 text-shadow: 0 0 1rem white;
                 box-shadow: none;
@@ -97,4 +98,12 @@
 
 .action-icon {
     font-size: 4rem;
+}
+
+.left-btm-radius {
+    border-radius: 0 0 0 3rem;
+}
+
+.right-btm-radius {
+    border-radius: 0 0 3rem 0;
 }
