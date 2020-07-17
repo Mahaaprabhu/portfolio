@@ -9,7 +9,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1a1b25b3;
+    background-color: #000000e8;
     overflow: scroll;
 }
 
@@ -37,7 +37,7 @@
         position: absolute;
         font-size: 3rem;
         color: #b33434bf;
-        background-color: #162238;
+        background-color: #00000087;
         border-radius: 100rem;
         width: 3rem;
         height: 3rem;
@@ -45,7 +45,7 @@
         transition: all 0.5s;
     }
     .close-popup-icon:hover {
-        color: #162238;
+        color: #00000087;
         background-color: #b33434bf;
         transform: scale(1.5) rotate(-10deg);
     }
@@ -53,7 +53,7 @@
         height: 100%;
         width: 100%;
         border-radius: 3rem;
-        background-color: #152135db;
+        background-color: #00000087;
         box-shadow: 0rem 0rem 4rem #ffffff;
         &-display {
             width: 100%;
