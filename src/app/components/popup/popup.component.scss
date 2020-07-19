@@ -18,7 +18,7 @@
     z-index: 1001;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     transition: all 1s;
     width: 80vw;
     max-width: 60rem;
@@ -27,7 +27,9 @@
     min-height: 20rem;
     padding: 2rem;
     border-radius: 3rem;
-    border: 0.1rem solid #8698ad;
+    border: 0.1rem solid #8a9198;
+    box-shadow: 0 0 100rem black;
+    background-image: linear-gradient(to right, #1f2f3a, #020405f2, #202f3b);
 
     .close-popup-icon {
         z-index: 1002;
@@ -37,7 +39,7 @@
         position: absolute;
         font-size: 3rem;
         color: #b33434bf;
-        background-color: #00000087;
+        background-color: transparent;
         border-radius: 100rem;
         width: 3rem;
         height: 3rem;
@@ -45,7 +47,7 @@
         transition: all 0.5s;
     }
     .close-popup-icon:hover {
-        color: #00000087;
+        color: #1a2832;
         background-color: #b33434bf;
         transform: scale(1.5) rotate(-10deg);
     }
@@ -53,8 +55,9 @@
         height: 100%;
         width: 100%;
         border-radius: 3rem;
-        background-color: #00000087;
-        box-shadow: 0rem 0rem 4rem #ffffff;
+        background-color: rgb(35 45 52 / 83%);
+        background-image: linear-gradient(to right, #121c22, #040809, #131c23);
+        box-shadow: 0 0 4rem #050d13;
         &-display {
             width: 100%;
             height: 60%;
@@ -83,10 +86,12 @@
                 position: relative;
             }
             .popup-btn:hover {
-                background-color: $bg-color-primary;
+                background-color: #121c22;
+                border-radius: 3rem;
             }
             .popup-btn:active {
-                background-color: $bg-color-primary;
+                background-color: #121c22;
+                border-radius: 3rem;
                 color: $spl-color-glow-primary;
                 font-size: 5rem;
                 text-shadow: 0 0 1rem white;
@@ -101,9 +106,11 @@
 }
 
 .left-btm-radius {
-    border-radius: 0 0 0 3rem;
+    //border-radius: 0 0 0 3rem;
+    border-radius: 3rem;
 }
 
 .right-btm-radius {
-    border-radius: 0 0 3rem 0;
+    //border-radius: 0 0 3rem 0;
+    border-radius: 3rem;
 }
