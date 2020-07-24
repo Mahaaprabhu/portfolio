@@ -8,29 +8,35 @@
     <div class="prof-links">
       <div class="water"></div>
       <div class="plink-wrap">
-        <div class="plink">
+        <div class="plink drop-source">
           <a class="iconic-link" href="https://www.github.com/Mahaaprabhu" target="_blank">
-            <i class="fab fa-github drop-source dp1">
-              <div class="drop drop1"></div>
-            </i>
+            <i class="fab fa-github drop-fade1"></i>
+          </a>
+          <div class="drop drop1"></div>
+        </div>
+      </div>
+      <div class="plink-wrap">
+        <div class="plink drop-source">
+          <a class="iconic-link" href="https://www.linkedin.com/in/mahaaprabhu" target="_blank">
+            <i class="fab fa-linkedin drop-fade2"></i>
+            <div class="drop drop2"></div>
           </a>
         </div>
       </div>
       <div class="plink-wrap">
-        <div class="plink">
-          <a class="iconic-link" href="https://www.linkedin.com/in/mahaaprabhu" target="_blank">
-            <i class="fab fa-linkedin drop-source dp2"><div class="drop drop2"></div></i>
-          </a>
+        <div class="plink drop-source">
+          <div class="iconic-link" (click)="onOpenPopup('EMAIL')">
+            <i class="fas fa-envelope drop-fade3"></i>
+          </div>
+          <div class="drop drop3"></div>
         </div>
       </div>
-      <div class="plink-wrap" (click)="onOpenPopup('EMAIL')">
-        <div class="plink">
-          <div class="iconic-link"><i class="fas fa-envelope drop-source dp3"><div class="drop drop3"></div></i></div>
-        </div>
-      </div>
-      <div class="plink-wrap" (click)="onOpenPopup('PHONE')">
-        <div class="plink">
-          <div class="iconic-link"><i class="fas fa-phone drop-source dp4"><div class="drop drop4"></div></i></div> 
+      <div class="plink-wrap" >
+        <div class="plink drop-source">
+          <div class="iconic-link" (click)="onOpenPopup('PHONE')">
+            <i class="fas fa-phone drop-fade4"></i>
+          </div> 
+          <div class="drop drop4"></div>
         </div>
       </div>
     </div>

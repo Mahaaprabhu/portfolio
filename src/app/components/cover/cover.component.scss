@@ -5,7 +5,7 @@
 .prof-cover {
     height: 100vh;
     min-height: 40rem;
-    max-height: 50rem;
+    //max-height: 50rem;
     width: 100vw;
     min-width: 25rem;
     background-color: #2c333e;
@@ -150,43 +150,46 @@
 
 
 .drop {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   border-radius: 100px;
   position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #d8d8d8;
   opacity: 0;
 }
 
 .drop1 {
-  animation: 5s bounce 4s linear infinite;
+  animation: 5s drop-fall-and-magical-splash 4s linear infinite;
 }
 
 .drop2 {
-  animation: 6s bounce 1s linear infinite;
+  animation: 6s drop-fall-and-magical-splash 1s linear infinite;
 }
 
 .drop3 {
-  animation: 7s bounce 0s linear infinite;
+  animation: 7s drop-fall-and-magical-splash 0s linear infinite;
 }
 
 .drop4 {
-  animation: 6s bounce 6s linear infinite;
+  animation: 6s drop-fall-and-magical-splash 6s linear infinite;
 }
 
-.dp1 {
+.drop-fade1 {
   animation: 5s fade 4s linear infinite;
 }
 
-.dp2 {
+.drop-fade2 {
   animation: 6s fade 1s linear infinite;
 }
 
-.dp3 {
+.drop-fade3 {
   animation: 7s fade 0s linear infinite;
 }
 
-.dp4 {
+.drop-fade4 {
   animation: 6s fade 6s linear infinite;
 }
 
@@ -209,38 +212,39 @@
   }
 }
 
-@keyframes bounce {
+@keyframes drop-fall-and-magical-splash {
   0% {
-    top: 0;
+    top: 70%;
   }
   30% {
-    top: 0;
-    opacity: 1;
+    top: 70%;
+    opacity: .5;
   }
   49% {
     background-color: #d8d8d8;
     top: 19vh;
     opacity: 1;
-    transform: scaleX(.7) scaleY(.9);
+    transform: translate(-50%, -50%) scaleX(.7) scaleY(.9);
     border: none;
   }
   50% {
-    transform: scaleX(2) scaleY(.5);
+    transform:  translate(-50%, -50%) scaleX(1.5) scaleY(.5);
     background-color: white;
     border: 5vh solid blue;
-    top: 20vh;
-  }
-  60% {
-    background-color: rgb(135 150 255 / 79%);
-    transform: scaleX(100) scaleY(5);
-    border: none;
-    top: 21vh;
-    left: auto;
+    border-radius: 50rem 100rem 100vh 100vh;
+    top: 50vh;
   }
   55% {
     background-color: rgb(135 150 255 / 79%);
-    top: 20vh;
+    top: 23vh;
     opacity: 0;
+  }
+  60% {
+    background-color: rgb(135 150 255 / 79%);
+    transform:  translate(-50%, -50%) scaleX(100) scaleY(5);
+    border: none;
+    top: 26vh;
+    //left: auto;
   }
   99% {
     height: 100%;
@@ -257,10 +261,10 @@
     opacity: 1;
   }
   30% {
-    opacity: 0.1;
+    opacity: 0;
   }
   49% {
-    opacity: 0.1;
+    opacity: 0;
   }
   50% {
     opacity: 0.1;
