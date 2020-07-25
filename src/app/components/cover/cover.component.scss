@@ -32,8 +32,8 @@
   margin: auto;
   //background-image: linear-gradient(90deg, transparent, $bg-color-primary, transparent,);
   background-image: linear-gradient(90deg, transparent, rgb(135 150 255 / 79%), transparent,);
-  padding: .1rem;
-  box-shadow: 0.1rem 0.1rem 1rem $bg-color-primary-dark;
+  padding: 1rem;
+  //box-shadow: 0.1rem 0.1rem 1rem $bg-color-primary-dark;
   &:active, &:hover {
     transform: scale(1.5)  translateY(10vh);
     width: 90vw;
@@ -150,14 +150,13 @@
 
 
 .drop {
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
   border-radius: 0 0 100rem 100rem;
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  //transform-style: preserve-3d;
   background-color: #d8d8d8;
   opacity: 0;
 }
@@ -215,40 +214,40 @@
 
 @keyframes drop-fall-and-magical-splash {
   0% {
-    border-radius: 0 0 100rem 100rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  29% {
-    border-radius: 100rem;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  30% {
+    border-radius: 1rem 1rem 10rem 10rem;
     top: 52%;
+    left: 52%;
+    transform: translate(-50%, -50%) scale(.2);
+  }
+  10% {
+    border-radius: 100rem;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.6);
+  }
+  20% {
+    top: 50%;
     opacity: .5;
-    transform: rotateZ(45deg) translate(-50%);
+    transform: rotateZ(45deg) translate(-50%) scale(.9);
     border-radius: 5rem 10rem 15rem 10rem;
   }
-  39% {
-    top: 53%;
+  21% {
+    top: 65%;
     opacity: .5;
     border-radius: 5rem 10rem 15rem 10rem;
   }
   49% {
     background-color: #7fbfd38f;
-    top: 29vh;
+    top: 30vh;
     opacity: .5;
     transform: translate(-50%, -50%) scaleX(.7) scaleY(.9);
     border: none;
     border-radius: 100rem;
   }
   50% {
-    transform:  translate(-50%, -50%) scaleX(20) scaleY(.5) rotateX(80deg);
-    background-color: transparent;
-    border-color: rgba(0, 0, 255, 0.685);
+    transform:  translate(-50%, -50%) scaleX(4) scaleY(4) rotateX(90deg);
+    background-image: linear-gradient(120deg, transparent, rgba(14, 87, 121, 0.445), white);
+    border-color: transparent;
     border-style: solid;
     border-radius: 1000rem;
     top: 30vh;
@@ -256,23 +255,23 @@
   }
   55% {
     background-color: transparent;
-    border-width: .1rem .2rem 1rem .2rem;
+    background-image: linear-gradient(45deg, transparent, rgba(0, 0, 255, 0.267), transparent);
+    border-width: 1rem .5rem .1rem .5rem;
     border-color: rgba(0, 0, 255, 0.699);
     border-style: solid;
-    transform: scaleX(35) scaleY(10) rotateX(80deg);
+    transform: scaleX(20) scaleY(10) rotateX(85deg);
     top: 30vh;
     border-radius: 1000rem;
     opacity: .5;
   }
   60% {
     background-color: transparent;
-    transform:  translate(-50%, -50%) scaleX(50) scaleY(10) rotateX(80deg);
-    border-width: .1rem .2rem 1rem .2rem;
+    transform:  translate(-50%, -50%) scaleX(100) scaleY(20) rotateX(85deg);
+    border-width: .1rem .2rem .5rem .2rem;
     border-color: rgba(0, 0, 255, 0.589);
     border-bottom-color:rgba(25, 25, 165, 0.39);
     border-style: solid;
-    top: 35vh;
-    //left: auto;
+    top: 30vh;
     opacity: .3;
     border-radius: 1000rem;
   }
@@ -282,13 +281,13 @@
     border-color: rgba(0, 0, 255, 0.61);
     border-bottom-color: rgba(37, 75, 158, 0.99);
     border-style: solid;
-    transform: scaleX(500) scaleY(30) rotateX(85deg);
+    transform: scaleX(500) scaleY(30) rotateX(82deg);
     border-width: .2rem .4rem 2rem .4rem;
     opacity: .1;
     border-radius: 1000rem;
   }
   100% {
-    top: 50vh;
+    top: 100vh;
     opacity: 0;
     border-width: 2rem 4rem 20rem 4rem;
     transform: scaleX(1000) scaleY(50) rotateX(90deg);
