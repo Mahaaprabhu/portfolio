@@ -10,7 +10,7 @@ $wave-dark: rgba(26, 26, 90, 0.51);
 $wave-light: rgba(77, 77, 182, 0.595);
 $bg-color: #1c38a0c7;
 
-@keyframes time-lapse {
+/*@keyframes time-lapse {
   0% {
     background-image: linear-gradient(180deg, #292b2beb, #1c222df0, #000000e3, #000000);
   }
@@ -35,8 +35,48 @@ $bg-color: #1c38a0c7;
   100% {
     background-image: linear-gradient(180deg, #292b2beb, #1c222df0, #000000e3, #000000);
   }
+}*/
+
+
+.theme {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 5s ease-in-out;
 }
 
+.show-theme {
+  opacity: 1;
+}
+
+.theme1 {
+  background-image: linear-gradient(180deg, #292b2beb, #1c222df0, #000000e3, #000000);
+}
+.theme2 {
+  background-image: linear-gradient(180deg, #375c67eb, #5e607b, #907990e3, #132033);
+}
+.theme3 {
+  background-image: linear-gradient(180deg, #5daac1eb, #7793a9, #847d84e3, #205096);
+}
+.theme4 {
+  background-image: linear-gradient(0deg, #438ba1, #a4b6bd, #247790de, #549ab5, #48a0ce57);
+}
+.theme5 {
+  background-image: linear-gradient(0deg, #568386eb, #b4b939a1, #839692e0, #ffff94, #adad9d57);
+}
+.theme6 {
+  background-image: linear-gradient(0deg, #606467f0, #a55956b0, #a99d94, #6f6f6fd6, #87aab3);
+}
+.theme7 {
+  background-image: linear-gradient(0deg, #1f1b1bf0, #131010b0, #404040, #4e4e4ed6, #5d5d5d);
+}
+.theme8 {
+  background-image: linear-gradient(180deg, #292b2beb, #1c222df0, #000000e3, #000000);
+}
 
 .prof-cover {
     height: 100vh;
@@ -44,11 +84,6 @@ $bg-color: #1c38a0c7;
     //max-height: 50rem;
     width: 100vw;
     min-width: 25rem;
-    background-image: linear-gradient(0deg, #1f1b1bf0, #131010b0, #404040, #4e4e4ed6, #5d5d5d);
-    animation: time-lapse 60s linear infinite;
-    //background-image: 
-    //    url("../../../assets/pics/digital_nody_nets_cool.jpg"), 
-    //    linear-gradient(to right, rgb(60 84 123 / 67%), rgb(12 42 88 / 82%), rgb(34 66 119 / 68%));
     color: $fnt-hdr-color-light;
     background-blend-mode: overlay;
     background-position: center;
@@ -67,10 +102,8 @@ $bg-color: #1c38a0c7;
   animation: radiusy1 10s linear infinite;
   overflow: visible;
   margin: auto;
-  //background-image: linear-gradient(90deg, transparent, $bg-color-primary, transparent,);
   background-image: linear-gradient(90deg, transparent, rgb(186 187 204 / 66%), transparent,);
   padding: 1rem;
-  //box-shadow: 0.1rem 0.1rem 1rem $bg-color-primary-dark;
   &:active, &:hover {
     transform: scale(1.5)  translateY(10vh);
     width: 90vw;

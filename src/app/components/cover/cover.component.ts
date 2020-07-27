@@ -7,13 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoverComponent implements OnInit {
 
+  themePointer = 1;
+  themeCount = 8;
+  theme: boolean[] = [false, true, false, false, false, false, false, false, false];
   openPopup: boolean = false;
   popupType: string;
   popupContent: string;
 
-  constructor() { }
+  constructor() {
+    this.themeRotate();
+   }
 
   ngOnInit(): void {
+  }
+
+  themeRotate(): void {
+    console.log(this.theme);
+    if(this.themePointer === this.themeCount) {
+      this.theme[this.themePointer] = false;
+      this.theme[1] = true;
+      this.themePointer = 1;
+    }else {
+      this.theme[this.themePointer] = false;
+      this.theme[++this.themePointer] = true;
+    }
+    setTimeout(()=>this.themeRotate(), 5000);
   }
 
   onOpenPopup(popupType: string) {
