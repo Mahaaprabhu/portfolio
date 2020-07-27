@@ -22,7 +22,7 @@ export class CoverComponent implements OnInit {
   }
 
   themeRotate(): void {
-    console.log(this.theme);
+    //console.log(this.theme);
     if(this.themePointer === this.themeCount) {
       this.theme[this.themePointer] = false;
       this.theme[1] = true;
