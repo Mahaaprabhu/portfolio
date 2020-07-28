@@ -1,0 +1,157 @@
+
+@keyframes radiusy1 {
+    20% {
+      border-radius: 30rem 20rem;
+    }
+    50% {
+      border-radius: 30rem;
+    }
+    80% {
+      border-radius: 20rem 30rem;
+    }
+}
+
+
+@keyframes radiusy2 {
+    20% {
+      border-radius: 20rem 30rem;
+    }
+    50% {
+      border-radius: 30rem;
+    }
+    80% {
+      border-radius: 30rem 20rem;
+    }
+}
+
+@keyframes drop-fall-and-magical-splash {
+    0% {
+      border-radius: 1rem 1rem 10rem 10rem;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(.2);
+    }
+    10% {
+      border-radius: 100rem;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(.6);
+    }
+    20% {
+      top: 55%;
+      opacity: .5;
+      transform: rotateZ(45deg) translate(-50%) scale(.9);
+      border-radius: 5rem 10rem 15rem 10rem;
+    }
+    21% {
+      top: 65%;
+      opacity: .5;
+      border-radius: 5rem 10rem 15rem 10rem;
+    }
+    46% {
+      background-color: $drop;
+      background-image: none;
+      top: 30vh;
+      opacity: .5;
+      transform: translate(-50%, -50%) scaleX(.7) scaleY(.9);
+      border: none;
+      border-radius: 100rem;
+    }
+    47% {
+      background-color: $water-light;
+      transform:  translate(-50%, -50%) scaleX(.2) scaleY(.2) rotateX(60deg);
+    }
+    50% {
+      transform:  translate(-50%, -50%) scaleX(10) scaleY(3) rotateX(90deg);
+      background-image: linear-gradient(0deg, $water-dark, $water);
+      border-bottom-color: $water-dark;
+      border-style: solid;
+      border-top-color: $water-light;
+      border-top-width: .5rem;
+      border-top-style: dotted;
+      border-right-color: $water;
+      border-right-width: 2rem;
+      border-right-style: dotted;
+      border-left-color: $water-light;
+      border-left-width: .1rem;
+      border-left-style: dotted;
+      border-radius: .1rem;
+      top: 30vh;
+      opacity: 1;
+    }
+    51% {
+      transform:  translate(-50%, -50%) scaleX(10) scaleY(3) rotateX(80deg);
+    }
+    58% {
+      background-color: $water-light;
+      background-image: linear-gradient(45deg, transparent, $wave-light, transparent);
+      border-width: 1rem .5rem .1rem .5rem;
+      border-color: $wave;
+      border-style: solid;
+      transform: scaleX(30) scaleY(15) rotateX(87deg);
+      top: 32vh;
+      border-radius: 1000rem;
+      opacity: .5;
+    }
+    70% {
+      background-color: transparent;
+      transform:  translate(-50%, -50%) scaleX(80) scaleY(15) rotateX(85deg);
+      border-width: .1rem .2rem .5rem .2rem;
+      border-color: $wave;
+      border-bottom-color: $wave-light;
+      border-style: solid;
+      top: 35vh;
+      opacity: .3;
+      border-radius: 1000rem;
+      border-style: dashed;
+    }
+    80% {
+      top: 40vh;
+      background-color: transparent;
+      border-color: $wave;
+      border-bottom-color: $wave-light;
+      transform: scaleX(200) scaleY(20) rotateX(80deg);
+      border-width: .2rem .4rem 2rem .4rem;
+      opacity: .1;
+      border-radius: 1000rem;
+      border-style: dotted;
+    }
+    100% {
+      top: 100vh;
+      opacity: 0;
+      border-width: 2rem 4rem 20rem 4rem;
+      transform: scaleX(1000) scaleY(50) rotateX(90deg);
+      background-color: transparent;
+      border-color: $wave;
+      border-bottom-color: $wave-light;
+      border-style: dotted;
+      border-radius: 1000rem;
+    }
+    
+}
+  
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.1;
+    }
+    55% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+  
+  

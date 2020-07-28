@@ -1,0 +1,117 @@
+$drop: #d8d8d8;
+$water: #00000050;
+$water-light: #143996b2;
+$water-dark: rgba(0, 0, 0, 0.829);
+$water-spot: rgba(0, 0, 255, 0.596);
+$wave: rgba(0, 0, 255, 0.51);
+$wave-dark: rgba(26, 26, 90, 0.51);
+$wave-light: rgba(77, 77, 182, 0.595);
+$bg-color: #1c38a0c7;
+
+.theme {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 5s ease-in-out;
+}
+
+.show-theme {
+    opacity: 1;
+}
+
+.theme1 {
+    background-image: linear-gradient(180deg, #292b2beb, #1c222df0, #000000e3, #000000);
+}
+.theme2 {
+    background-image: linear-gradient(180deg, #375c67eb, #5e607b, #907990e3, #132033);
+}
+.theme3 {
+    background-image: linear-gradient(180deg, #5daac1eb, #7793a9, #847d84e3, #205096);
+}
+.theme4 {
+    background-image: linear-gradient(0deg, #438ba1, #a4b6bd, #247790de, #549ab5, #48a0ce57);
+}
+.theme5 {
+    background-image: linear-gradient(0deg, #568386eb, #b4b939a1, #839692e0, #ffff94, #adad9d57);
+}
+.theme6 {
+    background-image: linear-gradient(0deg, #606467f0, #a55956b0, #a99d94, #6f6f6fd6, #87aab3);
+}
+.theme7 {
+    background-image: linear-gradient(0deg, #1f1b1bf0, #131010b0, #404040, #4e4e4ed6, #5d5d5d);
+}
+.theme8 {
+    background-image: linear-gradient(180deg, #292b2beb, #1c222df0, #000000e3, #000000);
+}
+
+
+.drop-source {
+    position: relative;
+}
+  
+.drop {
+    width: 50%;
+    height: 50%;
+    border-radius: 0 0 100rem 100rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $drop;
+    opacity: 0;
+}
+  
+.drop1 {
+    animation: 5s drop-fall-and-magical-splash 4s linear infinite;
+}
+  
+.drop2 {
+    animation: 6s drop-fall-and-magical-splash 1s linear infinite;
+}
+  
+ .drop3 {
+    animation: 7s drop-fall-and-magical-splash 0s linear infinite;
+ }
+  
+ .drop4 {
+    animation: 6s drop-fall-and-magical-splash 6s linear infinite;
+ }
+  
+ .drop-fade1 {
+    animation: 5s fade 4s linear infinite;
+ }
+  
+ .drop-fade2 {
+    animation: 6s fade 1s linear infinite;
+ }
+  
+ .drop-fade3 {
+    animation: 7s fade 0s linear infinite;
+ }
+  
+ .drop-fade4 {
+    animation: 6s fade 6s linear infinite;
+ }
+  
+.water {
+    width: 200vw;
+    height: 2vh;
+    background-image: linear-gradient(to bottom, #000000, #00000070);
+    position: absolute;
+    left: -50vw;
+    top: 20vh;
+    opacity: .5;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $water;
+      top: 100%;
+      width: 100%;
+      height: 100vh;
+    }
+}
