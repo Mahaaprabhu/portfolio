@@ -21,6 +21,10 @@ export class CoverComponent implements OnInit {
   }
 
   themeRotate(): void {
+    if(this.currentThemeId == 8) {
+      this.currentThemeId++;
+      return;
+    }
     this.currentThemeId = (this.currentThemeId % this.themeCount) + 1;
     setTimeout(()=>this.themeRotate(), 5000);
   }
