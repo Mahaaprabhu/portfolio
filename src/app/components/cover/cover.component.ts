@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoverComponent implements OnInit {
 
-  themeCount:number = 10;
-  currentThemeId:number = 9;
+  themeCount:number = 9;
+  currentThemeId:number = 0;
   openPopup: boolean = false;
   popupType: string;
   popupContent: string;
+  transtionTimeMilliSeconds: number = 7000;
 
   constructor() {
     this.themeRotate();
@@ -21,12 +22,13 @@ export class CoverComponent implements OnInit {
   }
 
   themeRotate(): void {
-    if(this.currentThemeId == 8) {
-      this.currentThemeId++;
-      return;
-    }
+    //Extend the night a little bit... I just love it ;)
     this.currentThemeId = (this.currentThemeId % this.themeCount) + 1;
-    setTimeout(()=>this.themeRotate(), 5000);
+    setTimeout(
+      ()=>this.themeRotate(), 
+      this.currentThemeId == this.themeCount - 1 ? this.transtionTimeMilliSeconds * 2
+                                              : this.transtionTimeMilliSeconds
+    );
   }
 
   onOpenPopup(popupType: string) {
