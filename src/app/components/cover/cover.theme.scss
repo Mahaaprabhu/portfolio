@@ -6,7 +6,6 @@ $water-spot: rgba(0, 0, 255, 0.596);
 $wave: rgba(0, 0, 255, 0.51);
 $wave-dark: rgba(26, 26, 90, 0.51);
 $wave-light: rgba(77, 77, 182, 0.595);
-$bg-color: #1c38a0c7;
 
 .theme {
     position: absolute;
@@ -16,7 +15,7 @@ $bg-color: #1c38a0c7;
     top: 0;
     z-index: -1;
     opacity: 0;
-    transition: all 7s ease-in-out;
+    transition: all 5s ease-in-out;
 }
 
 .show-theme {
@@ -36,7 +35,7 @@ $bg-color: #1c38a0c7;
     background-image: linear-gradient(180deg, #388bb7, #6899bd, #467ea7e0, #1d6873);
 }
 .theme5 {
-    background-image: linear-gradient(180deg, #a2b99791, #b3ad4366, #9fac9acc, #6c746a);
+    background-image: linear-gradient(180deg, #484a4891, #afa549bf, #968533c7, #343a32);
 }
 .theme6 {
     background-image: linear-gradient(180deg, #cabfb7, #ad8c768f, #8d9ba0, #6c746a);

@@ -12,7 +12,7 @@ export class CoverComponent implements OnInit {
   openPopup: boolean = false;
   popupType: string;
   popupContent: string;
-  transtionTimeMilliSeconds: number = 7000;
+  transtionTimeMilliSeconds: number = 5000;
 
   constructor() {
     this.themeRotate();
@@ -26,7 +26,7 @@ export class CoverComponent implements OnInit {
     this.currentThemeId = (this.currentThemeId % this.themeCount) + 1;
     setTimeout(
       ()=>this.themeRotate(), 
-      this.currentThemeId == this.themeCount - 1 ? this.transtionTimeMilliSeconds * 2
+      this.currentThemeId == this.themeCount  ? this.transtionTimeMilliSeconds * 3
                                               : this.transtionTimeMilliSeconds
     );
   }
