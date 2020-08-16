@@ -89,45 +89,78 @@
       top: 30vh;
     }
     52.5% {
-      transform:  translate(-50%, -50%) scaleX(.1) scaleY(.2) rotateX(0deg);
+      transform:  translate(-50%, -50%) scaleX(.1) scaleY(2) rotateX(0deg);
       top: 30vh;
     }
     53% {
-      transform:  translate(-50%, -50%) scaleX(0) scaleY(0) rotateX(85deg);
+      transform:  translate(-50%, -50%) scaleX(0) scaleY(0) rotateX(88deg);
       top: 30vh;
     }
-    57% {
-      transform:  translate(-50%, -50%) scaleX(15) scaleY(5) rotateX(85deg);
-      top: 33vh;
+    53.5% {
+      transform:  translate(-50%, -50%) scaleX(5) scaleY(5) rotateX(88deg);
+      top: 30vh;
     }
-    58% {
+    54% {
       background-color: $water-light;
       background-image: linear-gradient(45deg, transparent, $wave-light, transparent);
       border-width: 1rem .5rem .1rem .5rem;
       border-color: $wave;
       border-style: dotted;
-      transform: scaleX(30) scaleY(10) rotateX(85deg);
-      top: 33vh;
+      transform: scaleX(6) scaleY(6) rotateX(88deg);
+      top: 30vh;
       border-radius: 1000rem;
       opacity: .5;
     }
-    70% {
+    54.5% {
       background-color: transparent;
-      transform:  translate(-50%, -50%) scaleX(60) scaleY(15) rotateX(85deg);
+      transform:  translate(-50%, -50%) scaleX(10) scaleY(10) rotateX(85deg);
       border-width: .1rem .2rem 2rem .2rem;
       border-color: $wave;
       border-bottom-color: $wave-light;
-      top: 38vh;
+      top: 30vh;
       opacity: .3;
       border-radius: 1000rem;
       border-style: solid;
     }
-    80% {
+    55% {
+      background-color: $water-light;
+      background-image: linear-gradient(45deg, transparent, $wave-light, transparent);
+      border-width: 1rem .5rem .1rem .5rem;
+      border-color: $wave;
+      border-style: dotted;
+      transform: scaleX(0) scaleY(0) rotateX(90deg);
+      top: 30vh;
+      border-radius: 1000rem;
+      opacity: .5;
+    }
+    60% {
+      background-color: transparent;
+      transform:  translate(-50%, -50%) scaleX(50) scaleY(20) rotateX(90deg);
+      border-width: .1rem .2rem 2rem .2rem;
+      border-color: $wave;
+      border-bottom-color: $wave-light;
+      top: 30vh;
+      opacity: .3;
+      border-radius: 1000rem;
+      border-style: solid;
+    }
+    65% {
+      top: 35vh;
+      background-color: transparent;
+      border-color: $wave;
+      border-bottom-color: $wave-light;
+      transform: scaleX(50) scaleY(20) rotateX(85deg);
+      border-width: .2rem .4rem 2rem .4rem;
+      opacity: .1;
+      border-radius: 1000rem;
+      border-style: dotted;
+    }
+    75% {
       top: 40vh;
       background-color: transparent;
       border-color: $wave;
       border-bottom-color: $wave-light;
-      transform: scaleX(200) scaleY(20) rotateX(80deg);
+      transform: scaleX(500) scaleY(20) rotateX(80deg);
       border-width: .2rem .4rem 2rem .4rem;
       opacity: .1;
       border-radius: 1000rem;
@@ -137,7 +170,7 @@
       top: 100vh;
       opacity: 0;
       border-width: 2rem 4rem 20rem 4rem;
-      transform: scaleX(1000) scaleY(50) rotateX(90deg);
+      transform: scaleX(2000) scaleY(50) rotateX(90deg);
       background-color: transparent;
       border-color: $wave;
       border-bottom-color: $wave-light;

@@ -1,8 +1,8 @@
 .cloud {
     position: absolute;
-    width: 20vw;
-    height: 10vw;
-    opacity: .8;
+    width: 1000vw;
+    height: 60vh;
+    opacity: .05;
     background-color: transparent;
     animation: move 10s linear infinite;
 }
@@ -11,11 +11,11 @@
  .cloud-layer {
     position: absolute;
     left: 20%;
-    top: 20%;
-    height: 50%;
-    width: 50%;
+    top: 0;
+    height: 80%;
+    width: 80%;
     border-radius: 60% 30% 40% 30%;
-    background-image: radial-gradient(grey, white);
+    background-image: radial-gradient(rgba(128, 128, 128, 0.507), white);
     
     &::after {
       position: absolute;
@@ -25,7 +25,7 @@
       left: -30%;
       top: 20%;
       border-radius: 50% 20% 50% 50%;
-      background-image: radial-gradient(grey, white);
+      background-image: radial-gradient(rgba(128, 128, 128, 0.562), white);
     }
     
     &::before {
@@ -36,7 +36,7 @@
       right: -30%;
       top: 50%;
       border-radius: 30% 60% 40% 70%;
-      background-image: radial-gradient(grey, white);
+      background-image: radial-gradient(rgba(128, 128, 128, 0.5), white);
     }
     
  }
@@ -58,7 +58,7 @@
 }
   
 .cloud-layer4 {
-    transform: rotateZ(150deg) scaleX(.7) scaleY(.8) translate(-10%, -50%);
+    transform: rotateZ(0deg) scaleX(.7) scaleY(.8) translate(-10%, -50%);
     transform-origin: center;
     box-shadow: 0 0 1vw white;
 }
@@ -71,9 +71,13 @@
 
 @keyframes move {
     from {
-        transform: translate(-50vw, 0vh) scale(1.2);
+        transform: translate(-100%, -20vh) scale(.7);
+    }
+    50% {
+        transform: translate(10vw, -10vh) scale(1, 1);
     }
     to {
-        transform: translate(500vw, 30vh) scale(0);
+        transform: translate(20vw, 50vh) scale(.05, .01) rotateY(180deg);
+        opacity: 0;
     }
 }

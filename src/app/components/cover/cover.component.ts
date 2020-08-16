@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CoverComponent implements OnInit {
 
   themeCount:number = 9;
-  currentThemeId:number = 0;
+  currentThemeId:number = 9;
   openPopup: boolean = false;
   popupType: string;
   popupContent: string;
