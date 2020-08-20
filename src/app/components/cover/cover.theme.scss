@@ -1,11 +1,11 @@
 $drop: #d8d8d8;
 $water: #24025031;
 $water-light: #81879771;
-$water-dark: rgba(0, 0, 0, 0.829);
-$water-spot: rgba(51, 51, 138, 0.896);
-$wave: rgba(71, 71, 187, 0.9);
-$wave-dark: rgba(52, 52, 145, 0.9);
-$wave-light: rgb(23, 80, 160);
+$water-dark: rgb(0, 0, 0);
+$water-spot: rgba(133, 133, 161, 0.5);
+$wave: rgba(134, 145, 197, 0.5);
+$wave-dark: rgba(118, 143, 189, 0.5);
+$wave-light: rgba(189, 204, 228, 0.5);
 
 .theme {
     position: absolute;
@@ -47,7 +47,7 @@ $wave-light: rgb(23, 80, 160);
     background-image: linear-gradient(180deg, #0f272dc7, #3f5250, #181819);
 }
 .theme9 {
-    background-image: linear-gradient(180deg, #17171b, #171616fa, #000000, #100c31);
+    background-image: linear-gradient(180deg, #17171b, #171616fa, #000000, #272727);
 }
 
 .drop-source {

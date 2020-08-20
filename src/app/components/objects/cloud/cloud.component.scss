@@ -77,7 +77,7 @@
         transform: translate(10vw, -10vh) scale(1, 1);
     }
     to {
-        transform: translate(20vw, 50vh) scale(.05, .01) rotateY(180deg);
+        transform: translate(20vw, 50vh) scale(.05, .01);
         opacity: 0;
     }
 }
