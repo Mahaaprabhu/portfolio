@@ -45,7 +45,7 @@
     border-radius: 100rem;
     animation: radiusy2 10s linear infinite;
   }
-} //.prof-img {
+} //.prof-img
 
 .prof-name {
   transition: all .5s;
@@ -57,19 +57,23 @@
     transform: scale(1.05);
     text-shadow: 1px 1px 2px black;
   }
-} //.prof-name {
+} //.prof-name 
 
+/*
 .prof-img:hover ~ .prof-name,
 .prof-img:hover ~ .prof-links .plink-wrap  .plink .iconic-link {
   color: transparent;
   text-shadow: none;
 }
+*/
+
 .prof-links {
   width: 50vw;
   min-width: 20rem;
   max-width: 30rem;
   margin: auto;
   position: relative;
+  z-index: 10;
   .plink-wrap {
     //***** WRAP Calculation *****
     width: 25%; //Assuming 4 links
@@ -84,8 +88,9 @@
       margin: auto;
       border-radius: 100rem;
       text-align: center;
-
+      
       .iconic-link {
+        z-index: 10;
         color: $fnt-hdr-color-light;
         text-shadow: 1px 1px 2px black;
         width: 100%;
@@ -100,7 +105,7 @@
         //background-color: #183a7b;
         &:active, &:hover {
             transform: rotateZ(30deg) scale(.8);
-            background-color: #183a7b;
+            background-color: rgba(0, 0, 0, 0.3);
             box-shadow: 1px 1px 5px #cdd9ea;
         }
       }
