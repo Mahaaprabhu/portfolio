@@ -7,6 +7,8 @@ import { CoverComponent } from './components/cover/cover.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { CloudComponent } from './components/objects/cloud/cloud.component';
 import { CloudboxComponent } from './components/objects/cloudbox/cloudbox.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CloudboxComponent } from './components/objects/cloudbox/cloudbox.compon
     CoverComponent,
     PopupComponent,
     CloudComponent,
-    CloudboxComponent
+    CloudboxComponent,
+    IntroComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
