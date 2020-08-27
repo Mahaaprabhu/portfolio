@@ -1,12 +1,12 @@
 <div class="cloudbox">
-    <app-cloud class="cloud cloud1" [ngClass]="{'visible-cloud':activeClouds[1], 'invisible-cloud':!activeClouds[1]}"></app-cloud>
-    <app-cloud class="cloud cloud2" [ngClass]="{'visible-cloud':activeClouds[2], 'invisible-cloud':!activeClouds[2]}"></app-cloud>
-    <app-cloud class="cloud cloud3" [ngClass]="{'visible-cloud':activeClouds[3], 'invisible-cloud':!activeClouds[3]}"></app-cloud>
-    <app-cloud class="cloud cloud4" [ngClass]="{'visible-cloud':activeClouds[4], 'invisible-cloud':!activeClouds[4]}"></app-cloud>
-    <app-cloud class="cloud cloud5" [ngClass]="{'visible-cloud':activeClouds[5], 'invisible-cloud':!activeClouds[5]}"></app-cloud>
-    <app-cloud class="cloud cloud6" [ngClass]="{'visible-cloud':activeClouds[6], 'invisible-cloud':!activeClouds[6]}"></app-cloud>
-    <app-cloud class="cloud cloud7" [ngClass]="{'visible-cloud':activeClouds[7], 'invisible-cloud':!activeClouds[7]}"></app-cloud>
-    <app-cloud class="cloud cloud8" [ngClass]="{'visible-cloud':activeClouds[8], 'invisible-cloud':!activeClouds[8]}"></app-cloud>
-    <app-cloud class="cloud cloud9" [ngClass]="{'visible-cloud':activeClouds[9], 'invisible-cloud':!activeClouds[9]}"></app-cloud>
-    <app-cloud class="cloud cloud10" [ngClass]="{'visible-cloud':activeClouds[10], 'invisible-cloud':!activeClouds[10]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[1]" class="cloud cloud1" [ngClass]="{'visible-cloud':activeClouds[1], 'invisible-cloud':!activeClouds[1]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[2]" class="cloud cloud2" [ngClass]="{'visible-cloud':activeClouds[2], 'invisible-cloud':!activeClouds[2]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[3]" class="cloud cloud3" [ngClass]="{'visible-cloud':activeClouds[3], 'invisible-cloud':!activeClouds[3]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[4]" class="cloud cloud4" [ngClass]="{'visible-cloud':activeClouds[4], 'invisible-cloud':!activeClouds[4]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[5]" class="cloud cloud5" [ngClass]="{'visible-cloud':activeClouds[5], 'invisible-cloud':!activeClouds[5]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[6]" class="cloud cloud6" [ngClass]="{'visible-cloud':activeClouds[6], 'invisible-cloud':!activeClouds[6]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[7]" class="cloud cloud7" [ngClass]="{'visible-cloud':activeClouds[7], 'invisible-cloud':!activeClouds[7]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[8]" class="cloud cloud8" [ngClass]="{'visible-cloud':activeClouds[8], 'invisible-cloud':!activeClouds[8]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[9]" class="cloud cloud9" [ngClass]="{'visible-cloud':activeClouds[9], 'invisible-cloud':!activeClouds[9]}"></app-cloud>
+    <app-cloud *ngIf="activeClouds[10]" class="cloud cloud10" [ngClass]="{'visible-cloud':activeClouds[10], 'invisible-cloud':!activeClouds[10]}"></app-cloud>
 </div>
