@@ -1,10 +1,10 @@
 .cloud {
     position: absolute;
     width: 1000vw;
-    height: 60vh;
-    opacity: .06;
+    height: 50vh;
+    opacity: 0;
     background-color: transparent;
-    animation: move 10s linear infinite;
+    animation: move 9s linear infinite;
     z-index: -10;
 }
 
@@ -72,13 +72,15 @@
 
 @keyframes move {
     from {
-        transform: translate(-100%, -20vh) scale(.7);
+        opacity: 0;
+        transform: translate(-20%, 0) scale(0) rotateX(60deg);
     }
-    50% {
-        transform: translate(10vw, -10vh) scale(1, 1);
+    10% {
+        opacity: .02;
+        transform: translate(-20%, 0) scale(1) rotateX(60deg);
     }
     to {
-        transform: translate(20vw, 50vh) scale(.05, .01);
+        transform: translate(-60%, 10%) scale(0) rotateX(0deg);
         opacity: 0;
     }
 }
