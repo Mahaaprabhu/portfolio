@@ -1,0 +1,97 @@
+$text-shadow-primary: 1px 1px 5px black;
+$text-shadow-secondary: 0px 0px 20px dimgrey;
+$assets-path-prefix: "/profile";
+//$assets-path-prefix: "";
+
+@mixin responsiveness($display-type) {
+    /*
+        For 16px default font size:
+            <0300px => mob-small => 18.750em
+            <0450px => mob-port  => 28.125em
+            <0600px => mob-land  => 37.500em
+            <0750px => tab-port  => 46.875em
+            <1000px => tab-land  => 62.500em
+            <1250px => laptop    => 78.125em
+            >1250px => bigscreen => 78.125em
+
+        Override Order:
+            @include responsiveness('mob-small') {}
+            @include responsiveness('mob-port') {}
+            @include responsiveness('mob-land') {}
+            @include responsiveness('tab-port') {}
+            @include responsiveness('tab-land') {}
+            @include responsiveness('laptop') {}
+            @include responsiveness('bigscreen') {}
+            
+
+    */
+
+    //1. Mobile Small Screens ( 300px => 18.75em )
+    @if ($display-type == 'mob-small') {
+        @media (max-width: 18.75em) {
+            @content;
+        }
+    }
+
+    //2. Mobile Portrait ( 300px => 18.75em )
+    @if ($display-type == 'mob-port') {
+        @media (min-width: 18.75em) {
+            @content;
+        }
+    }
+
+    //3. Mobile Landscape ( 450px => 28.125em )
+    @if ($display-type == 'mob-land') {
+        @media (min-width: 28.125em) {
+            @content;
+        }
+    }
+
+    //4. Tablet Portrait ( 600px => 37.5em )
+    @if ($display-type == 'tab-port') {
+        @media (min-width: 37.5em) {
+            @content;
+        }
+    }
+
+    //5. Tablet Landscape ( 750px => 46.875em )
+    @if ($display-type == 'tab-land') {
+        @media (min-width: 46.875em) {
+            @content;
+        }
+    }
+
+    //6. Laptop ( 1000px  => 62.5em )
+    @if ($display-type == 'laptop') {
+        @media (min-width: 62.5em) {
+            @content;
+        }
+    }
+
+    //7. Bigscreen ( 1250px => 78.125em )
+    @if ($display-type == 'bigscreen') {
+        @media (min-width: 78.125em) {
+            @content;
+        }
+    }
+   
+}
+
+
+@keyframes wavy-border-splash {
+    0% {
+        border: 0rem;
+    }
+    10% {
+        border: .1rem solid rgba(255, 255, 255, 0.075);
+    }
+    50% {
+        border: .2rem solid rgba(255, 255, 255, 0.205);
+    }
+    90% {
+        border: .1rem solid rgba(255, 255, 255, 0.13);
+    }
+    100% {
+        border: 0rem;
+    }
+}

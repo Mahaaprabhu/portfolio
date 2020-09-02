@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateUtilService } from './../../services/date-util.service';
 
 @Component({
   selector: 'app-cover',
@@ -13,9 +14,11 @@ export class CoverComponent implements OnInit {
   popupType: string;
   popupContent: string;
   transtionTimeMilliSeconds: number = 5000;
+  greetingWithContext: string = 'Good Morning';
 
-  constructor() {
+  constructor(private dateUtilService: DateUtilService) {
     this.themeRotate();
+    this.greetingWithContext = this.dateUtilService.getGreetingWithContext();
   }
 
   ngOnInit(): void {
