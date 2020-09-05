@@ -7,6 +7,8 @@
     z-index: -10;
     overflow: hidden;
     transform-origin: center;
+    transition: all 100ms ease-in-out;
+    will-change: transform, opacity, translate;
 }
 
 

@@ -6,6 +6,8 @@
     background-color: transparent;
     animation: move 9s linear infinite;
     z-index: -10;
+    transition: all .5s ease-in-out;
+    will-change: transform, opacity, translate;
 }
 
   
@@ -17,6 +19,8 @@
     width: 80%;
     border-radius: 60% 30% 40% 30%;
     background-image: radial-gradient(rgba(128, 128, 128, 0.507), white);
+    transition: all .5s ease-in-out;
+    will-change: transform, opacity, translate;
     
     &::after {
       position: absolute;
