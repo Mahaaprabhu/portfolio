@@ -16,6 +16,7 @@
     padding: 4rem 2rem;
     overflow: hidden;
     position: relative;
+    clip-path: polygon(100% 0, 99% 82%, 95% 94%, 87% 98%, 72% 96%, 25% 100%, 6% 95%, 0 87%, 3% 72%, 0 0);
 } //.prof-cover
 
 .prof-img {
@@ -26,11 +27,12 @@
   max-height: 18rem;
   border-radius: 100rem;
   animation: radiusy1 10s linear infinite;
-  overflow: visible;
+  overflow: hidden;
   margin: auto;
   margin-bottom: 1rem;
   background-image: linear-gradient(90deg, transparent, rgb(186 187 204 / 66%), transparent,);
-  padding: .5rem;
+  padding: 2rem;
+  clip-path: polygon(50% 5%, 88% 6%, 96% 43%, 95% 83%, 73% 83%, 33% 93%, 10% 88%, 4% 44%, 11% 15%);
   //&:active, &:hover {
     //transform: scale(1.5)  translateY(10vh);
     //width: 90vw;
@@ -84,9 +86,9 @@
       white-space: nowrap;
       overflow: hidden;
       width: 100%;
-      @supports (animation: type-mid 2s steps(40, end)) {
+      @supports (animation: type-mid 4s steps(40, end)) {
           opacity: 0;
-          animation: type-mid 2s steps(40, end) .5s, color-blast .5s steps(30, end) 2.5s;
+          animation: type-mid 4s steps(40, end) .5s, color-blast .5s steps(30, end) 2.5s;
           animation-fill-mode: forwards;
       }
   }
@@ -99,9 +101,9 @@
       white-space: nowrap;
       overflow: hidden;
       width: 100%;
-      @supports (animation: type-end 2s steps(30, end) 2.5s) {
+      @supports (animation: type-end 4s steps(30, end) 2.5s) {
           opacity: 0;
-          animation: type-end 2s steps(30, end) 2.5s, color-blast .5s steps(30, end) 4.5s;
+          animation: type-end 4s steps(30, end) 2.5s, color-blast .5s steps(30, end) 4.5s;
           animation-fill-mode: forwards;
       }
   }

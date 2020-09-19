@@ -1,13 +1,23 @@
 
 @keyframes radiusy1 {
+    0% {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
     20% {
-      border-radius: 30rem 20rem;
+      border-radius: 3rem 2rem;
+    }
+    40% {
+      transform: rotate3d(0, 0, 0, 0deg);
     }
     50% {
-      border-radius: 30rem;
+      border-radius: 3rem;
+      clip-path: polygon(50% 5%, 100% 0, 96% 43%, 100% 100%, 68% 100%, 33% 93%, 0 100%, 4% 44%, 0 0);
     }
     80% {
-      border-radius: 20rem 30rem;
+      border-radius: 2rem 3rem;
+    }
+    100% {
+      transform: rotate3d(0, 1, .1, 360deg);
     }
 }
 
@@ -17,7 +27,7 @@
       border-radius: 20rem 30rem;
     }
     50% {
-      border-radius: 30rem;
+      border-radius: 10rem;
     }
     80% {
       border-radius: 30rem 20rem;
